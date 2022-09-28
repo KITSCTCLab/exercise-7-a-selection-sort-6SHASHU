@@ -2,13 +2,13 @@ from typing import List
 
 def selectionSort(array, size) -> List[int]:
   for i in range(len(arr)):
-    minimum = i
+    maximum = i
     for j in range(i+1,len(arr)):
-      if arr[j] < arr[minimum]:
-        minimum = j
+      if arr[j] > arr[maximum]:
+        maximum = j
     temp = arr[i]
-    arr[i] = arr[minimum]
-    arr[minimum] = temp
+    arr[i] = arr[maximum]
+    arr[maximum] = temp
   return arr
 
 # Do not change the following code
