@@ -1,7 +1,7 @@
 from typing import List
 
 def selectionSort(array, size) -> List[int]:
-  for i in range(size):
+  for i in range(size-1):
     min = i
     for j in range(i+1, size):
       if array[j]<array[min]:
@@ -18,5 +18,3 @@ for item in input_data.split(', '):
   elif item.lstrip("-").isnumeric():
     data.append(int(item))
 print(selectionSort(data, len(data)))
-Footer
-© 2022 GitHub, I
